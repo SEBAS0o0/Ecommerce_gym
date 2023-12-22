@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Ecommerce WebSite with Payment </title>
+<link rel=stylesheet href=css/styles.min.css>
+<link href=https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css rel=stylesheet>
+<!-- Ejemplo de preloading para una hoja de estilo CSS -->
+<link rel="preloader" href="/css/styles.min.css" as="style">
+
+</head>
+<body>
+<audio id=song>
+<source src=musica/eduar.mp3 type=audio/mp3>
+</audio>
+<script>window.addEventListener("click",(()=>{document.getElementById("song").play()}))</script>
+
+<div class=preloader>
+<img src=/img/ooo.gif alt=Preloader class=img_preload>
+</div>
+<header>
+<div class="nav container">
+<a href=# class=logo>DR Rafapharma</a>
+<i class="bx bxs-cart" id=cart_icon data-quantity=0></i>
+<div class=cart>
+<h2 class=cart_title>Your Cart</h2>
+<div class=cart_content>
+<div class=cart_box>
+<img src=img/1.png alt="" class=cart_img>
+<div class=detail_box>
+<div class=cart_product_title>Product Shirt</div>
+<div class=cart_price>$50</div>
+<input type=number name="" value=1 class=cart_quantity>
+</div>
+<i class="bx bx-trash cart_remove"></i>
+</div>
+</div>
+<div class=total>
+<div class=total_title>Total</div>
+<div class=total_price>$0</div>
+</div>
+<button type=button class=btn_buy>Pay Now</button>
+<i class="bx bx-x" id=close_cart></i>
+</div>
+</div>
+</header>
+<section class="shop container">
+<h2 class=section_title>Comprar Productos</h2>
+<div class=shop_content>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>Creatina Drive</h2>
+<span class=price>$25</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>Trembolona</h2>
+<span class=price>$60</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>Dianabol 20mg <br> 100 Caps Mutant</h2>
+<span class=price>$99</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>NOLVADEX 20 MG</h2>
+<span class=price>$10</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>WINSTROL 100 MG X 20 ML</h2>
+<span class=price>$100</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>BLEND 1 400mg 10ml</h2>
+<span class=price>$50</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>TEST P 100 MUTANT</h2>
+<span class=price>$45</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>100% Whey Gold Standard 5 Lbs Vainilla</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>Proton Whey 2 LB Creatina + suplemento</h2>
+<span class=price>$80.99</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>Set De Pesas Kit <br> Mancuernas 30Kg</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class="product img">
+<h2 class=product_title>SET SACO DE BOX<br> GUANTES + VENDAS</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>Cinturón de cuero</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>Capsulas de Winstrol</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>ULTRABOOST SHOES</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>ULTRABOOST SHOES</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>ULTRABOOST SHOES</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>ULTRABOOST SHOES</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>ULTRABOOST SHOES</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/1.png alt="" class=product_img>
+<h2 class=product_title>ULTRABOOST SHOES</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+<div class=product_box>
+<img src=img/2.png alt="" class=product_img>
+<h2 class=product_title>ULTRABOOST SHOES</h2>
+<span class=price>$75</span>
+<i class="bx bx-shopping-bag add-cart"></i>
+</div>
+</div>
+</section>
+<script defer src=js/main.obfuscated.js></script>
+<script defer src=js/index.obfuscated.js></script>
+</body>
+</html>
