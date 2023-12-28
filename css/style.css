@@ -1,0 +1,732 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap);
+.container,
+header,
+img {
+	width: 100%
+}
+
+.cart,
+header {
+	position: fixed;
+	top: 0
+}
+
+.cart_title,
+.logo,
+.total_title {
+	font-weight: 600
+}
+
+.btn_buy,
+.logo,
+body {
+	color: var(--bg-color)
+}
+
+.logo,
+.section_title {
+	font-family: 'Bungee Spice', sans-serif;
+	text-align: center
+}
+
+.product_box,
+.product_box:hover {
+	transition: .4s cubic-bezier(.075, .82, .165, 1)
+}
+
+#cart_icon,
+#close_cart,
+.add-cart,
+.btn_buy,
+.cart_remove {
+	cursor: pointer
+}
+
+.btn_buy,
+.cart_quantity,
+.cart_title,
+.logo,
+.sc_container p,
+.section_title {
+	text-align: center
+}
+
+.bowl::after,
+.liquid::before {
+	content: '';
+	position: absolute
+}
+
+.liquid,
+.liquid::before {
+	filter: drop-shadow(0 0 80px #41c1fb)
+}
+
+* {
+	font-family: Poppins, sans-serif;
+	margin: 0;
+	padding: 0;
+	scroll-padding-top: 2rem;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none
+}
+
+:root {
+	--main-color: #fd4646;
+	--text-color: #8fac02;
+	--bg-color: #fff;
+	--container-color: #1e1e2a
+}
+
+body {
+	background: 0 0/cover #000
+}
+
+section {
+	padding: 4rem 0 3rem
+}
+
+.container {
+	max-width: 1068px;
+	margin: auto
+}
+
+header {
+	border-radius: 100px;
+	left: 0;
+	background: url(https://logomaker.designfreelogoonline.com/media/productdesigner/logo/resized/1199_gym_logo-05.png) 0 0/contain no-repeat #000000bd;
+	box-shadow: rgb(50 78 225) 0 10px 54px;
+	z-index: 50;
+	background-position-y: 153%
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0
+}
+
+.logo {
+	font-size: 2.1rem;
+	display: block;
+	margin: 0 auto
+}
+
+#cart_icon {
+	position: relative;
+	font-size: 2.8rem;
+	left: -15px;
+	color: red
+}
+
+#cart_icon[data-quantity]::after {
+	content: "";
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -12px;
+	width: 20px;
+	height: 20px;
+	background: var(--text-color);
+	border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.cart {
+	right: -100%;
+	width: 360px;
+	min-height: 100vh;
+	padding: 20px;
+	background: var(--container-color);
+	box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%)
+}
+
+.cart.active {
+	right: 13px;
+	box-shadow: rgb(255 7 245 / 51%) 0 13px 54px;
+	border-radius: 30px;
+	background-color: rgb(0 4 18 / 96%)
+}
+
+.cart_title {
+	font-size: 1.5rem;
+	margin-top: 2rem
+}
+
+.total {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+	border-top: 1px solid var(--text-color)
+}
+
+.total_title {
+	font-size: 1.2rem;
+	margin-top: 1rem
+}
+
+.btn_buy,
+.cart_price,
+.price {
+	font-weight: 500
+}
+
+.total_price {
+	font-size: 1.075rem;
+	margin: 1rem 0 0 .7rem
+}
+
+.btn_buy {
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem auto 0;
+	padding: 12px 20px;
+	width: 50%;
+	border: none;
+	border-radius: 2rem;
+	background: var(--text-color);
+	font-size: 1rem;
+	font-style: italic
+}
+
+#close_cart {
+	position: absolute;
+	top: 1rem;
+	right: .8rem;
+	font-size: 2rem;
+	color: var(--text-color)
+}
+
+.cart_box {
+	display: grid;
+	grid-template-columns: 32% 50% 18%;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem
+}
+
+.cart_img {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	object-position: center;
+	padding: 10px
+}
+
+.detail_box {
+	display: grid;
+	row-gap: .5rem
+}
+
+.cart_product_title {
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase
+}
+
+.cart_quantity {
+	border: 1px solid var(--text-color);
+	outline-color: var(--main-color);
+	width: 2.8rem;
+	font-size: 1rem;
+	border-radius: 4px
+}
+
+.cart_remove {
+	font-size: 24px;
+	color: var(--main-color)
+}
+
+.section_title {
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 1.8rem;
+	background-size: inherit;
+	background-position-y: -52px;
+	border-radius: 40px
+}
+
+.shop {
+	margin-top: 2rem
+}
+
+.shop_content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(183px, auto));
+	gap: 1.5rem;
+	box-shadow: 0 -4px 66px hsl(117deg 100% 49% / 147%);
+	border-radius: 20px;
+	background: url(/img/1cbm.webp) center/contain no-repeat fixed #97999959;
+	margin-top: inherit
+}
+
+.product_box {
+	position: relative;
+	background: #000000bd;
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 0 9px 14px hsl(38.08deg 100% 50%)
+}
+
+.add-cart,
+.sc_btn {
+	background: var(--text-color);
+	color: var(--bg-color)
+}
+
+.product_box:hover {
+	background: #818181;
+	border: 1px;
+	box-shadow: 0 80px 32px hsl(.75, .82, .165, 1)
+}
+
+.product_box:hover .price,
+.product_box:hover .product_title {
+	color: #141414
+}
+
+.product_img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-bottom: .5rem
+}
+
+.product_title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: .8rem
+}
+
+.add-cart {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	padding: 10px;
+	font-size: 1.2rem;
+	border-radius: 50%
+}
+
+.add-cart:hover {
+	background: #211d39
+}
+
+.sc_container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+.sc_container img {
+	width: 200px;
+	margin: 2rem 0
+}
+
+.sc_container h1 {
+	font-size: 2.8rem;
+	margin-bottom: 10px
+}
+
+.sc_container p {
+	max-width: 600px;
+	font-size: .97rem;
+	margin: .5rem 0
+}
+
+.sc_btn {
+	padding: 12px 20px;
+	border-radius: 2rem;
+	font-size: 1rem;
+	font-weight: 500
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100
+}
+
+.img_preload {
+	width: 700px;
+	height: 700px;
+	border-radius: 100px
+}
+
+.ret {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 315px;
+	border-radius: 50px;
+    background-attachment: fixed;
+}
+
+.bowl {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: rgba(255, 255, 255, .1);
+	border-radius: 50vh;
+	border: 8px solid transparent;
+	transform-origin: bottom center;
+	animation: 5s linear infinite animate;
+	top: -27px;
+	background-image: url(/img/arnold1.webp);
+	background-size: cover;
+	background-position-y: -8px;
+	box-shadow: rgba(50, 195, 255, .51) 0 13px 54px
+}
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+		transform: rotate(0)
+	}
+	25% {
+		transform: rotate(15deg)
+	}
+	50% {
+		transform: rotate(0)
+	}
+	75% {
+		transform: rotate(-15deg)
+	}
+	100% {
+		filter: hue-rotate(360deg);
+		transform: rotate(0)
+	}
+}
+
+.bowl::after {
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	width: 150px;
+	height: 80px;
+	background: rgba(255, 255, 255, .05)
+}
+
+.liquid {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	background-color: #1fa4e04f;
+	border-bottom-left-radius: 150px;
+	border-bottom-right-radius: 150px;
+	transform-origin: top center;
+	animation: 5s linear infinite animateLiquid
+}
+
+@keyframes animateLiquid {
+	0%,
+	100%,
+	50% {
+		transform: rotate(0)
+	}
+	25% {
+		transform: rotate(-20deg)
+	}
+	75% {
+		transform: rotate(20deg)
+	}
+}
+
+.liquid::before {
+	top: -10px;
+	width: 100%;
+	height: 20px
+}
+
+.shadow {
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 30px;
+	background: rgb(177 177 177 / 50%);
+	border-radius: 50%;
+	position: relative;
+	top: 294px
+}
+
+@media screen and (min-width:300px) {
+	.img_preload,
+	header {
+		border-radius: 100px
+	}
+	.preloader,
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%
+	}
+	.preloader {
+		height: 100%;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 100
+	}
+	.img_preload {
+		width: 400px;
+		height: 400px
+	}
+	.section_title {
+		font-size: 3rem;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 1.8rem;
+		font-family: 'Bungee Spice', sans-serif;
+		background-size: inherit;
+		background-position-y: -52px;
+		border-radius: 40px
+	}
+	header {
+		background: url(https://logomaker.designfreelogoonline.com/media/productdesigner/logo/resized/1199_gym_logo-05.png) 0 0/contain no-repeat #000000bd;
+		box-shadow: rgb(50 78 225) 0 10px 54px;
+		z-index: 50;
+		background-position-y: 153%
+	}
+	.cart.active {
+		right: 13px;
+		box-shadow: rgb(255 7 245 / 51%) 0 13px 54px;
+		border-radius: 30px;
+		background-color: rgb(0 4 18 / 96%)
+	}
+	.shop_content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(183px, auto));
+		gap: 1.5rem;
+		box-shadow: 0 -4px 66px hsl(117deg 100% 49% / 147%);
+		border-radius: 20px;
+		background: url(/img/1cbm.webp) center/contain no-repeat fixed #97999959;
+		margin-top: inherit
+	}
+	
+	#cart_icon {
+		position: relative;
+		font-size: 2.8rem;
+		cursor: pointer;
+		left: -15px;
+		color: red
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.img_preload,
+	header {
+		border-radius: 100px
+	}
+	.preloader,
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%
+	}
+	.preloader {
+		height: 100%;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 100
+	}
+	.img_preload {
+		width: 300px;
+		height: 300px
+	}
+	.section_title {
+		font-size: 3rem;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 1.8rem;
+		font-family: 'Bungee Spice', sans-serif;
+		background-size: inherit;
+		background-position-y: -52px;
+		border-radius: 40px
+	}
+	header {
+		background: url(https://logomaker.designfreelogoonline.com/media/productdesigner/logo/resized/1199_gym_logo-05.png) 0 0/contain no-repeat #000000bd;
+		box-shadow: rgb(50 78 225) 0 10px 54px;
+		z-index: 50;
+		background-position-y: 153%
+	}
+	.cart.active {
+		right: 13px;
+		box-shadow: rgb(255 7 245 / 51%) 0 13px 54px;
+		border-radius: 30px;
+		background-color: rgb(0 4 18 / 96%)
+	}
+	.shop_content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(183px, auto));
+		gap: 1.5rem;
+		box-shadow: 0 -4px 66px hsl(117deg 100% 49% / 147%);
+		border-radius: 20px;
+		background: url(/img/1cbm.webp) center/contain no-repeat fixed #97999959;
+		margin-top: inherit
+	}
+	
+	#cart_icon {
+		position: relative;
+		font-size: 2.8rem;
+		cursor: pointer;
+		left: -15px;
+		color: red
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.img_preload,
+	header {
+		border-radius: 100px
+	}
+	.preloader,
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%
+	}
+	.preloader {
+		height: 100%;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 100
+	}
+	.img_preload {
+		width: 400px;
+		height: 400px
+	}
+	.section_title {
+		font-size: 3rem;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 1.8rem;
+		font-family: 'Bungee Spice', sans-serif;
+		background-size: inherit;
+		background-position-y: -52px;
+		border-radius: 40px
+	}
+	header {
+		background: url(https://logomaker.designfreelogoonline.com/media/productdesigner/logo/resized/1199_gym_logo-05.png) 0 0/contain no-repeat #000000bd;
+		box-shadow: rgb(50 78 225) 0 10px 54px;
+		z-index: 50;
+		background-position-y: 153%
+	}
+	.cart.active {
+		right: 0;
+		box-shadow: rgb(255 7 245 / 51%) 0 13px 54px;
+		border-radius: 30px;
+		background-color: rgb(0 4 18 / 96%)
+	}
+	.shop_content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(183px, auto));
+		gap: 1.5rem;
+		box-shadow: 0 -4px 66px hsl(117deg 100% 49% / 147%);
+		border-radius: 20px;
+		background: url(/img/1cbm.webp) center/contain no-repeat fixed #97999959;
+		margin-top: inherit
+	}
+	
+	#cart_icon {
+		position: relative;
+		font-size: 2.8rem;
+		cursor: pointer;
+		left: -15px;
+		color: red
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.img_preload,
+	header {
+		border-radius: 100px
+	}
+	.preloader,
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%
+	}
+	.preloader {
+		height: 100%;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 100
+	}
+	.img_preload {
+		width: 700px;
+		height: 700px
+	}
+	.section_title {
+		font-size: 5rem;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 1.8rem;
+		font-family: 'Bungee Spice', sans-serif;
+		background-size: inherit;
+		background-position-y: -52px;
+		border-radius: 40px
+	}
+	header {
+		background: url(https://logomaker.designfreelogoonline.com/media/productdesigner/logo/resized/1199_gym_logo-05.png) 0 0/contain no-repeat #000000bd;
+		box-shadow: rgb(50 78 225) 0 10px 54px;
+		z-index: 50;
+		background-position-y: 153%
+	}
+	.cart.active {
+		right: 0;
+		box-shadow: rgb(255 7 245 / 51%) 0 13px 54px;
+		border-radius: 30px;
+		background-color: rgb(0 4 18 / 96%)
+	}
+	.shop_content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(183px, auto));
+		gap: 1.5rem;
+		box-shadow: 0 -4px 66px hsl(117deg 100% 49% / 147%);
+		border-radius: 20px;
+		background: url(/img/1cbm.webp) center/contain no-repeat fixed #97999959;
+		margin-top: inherit
+	}
+	
+	#cart_icon {
+		position: relative;
+		font-size: 2.8rem;
+		cursor: pointer;
+		left: -15px;
+		color: red
+	}
+}
