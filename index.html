@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce WebSite with Payment </title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <script>
+        window.addEventListener('click', () => {
+            document.getElementById("song").play();
+        });
+    </script>
+    <audio id="song">
+        <source src="musica/eduar.mp3" type="audio/mp3">
+    </audio>
+    
+    <div class="preloader">
+        <img src="https://media.tenor.com/wzYlZPM8ojoAAAAC/fitness-swipe-up.gif" alt="Preloader" class="img_preload">
+    </div>
+
+    <!--Navbar-->
+    <header>
+        <!--Nav-->
+        <div class=" nav container">
+            <!--Logo-->
+            <a href="#" class="logo">DR Rafapharma</a>
+            
+            <!-- Cart Icon -->
+            <i class='bx bxs-cart' id="cart_icon" data-quantity="0"></i>
+            <!--cart-->
+            <div class="cart">
+                <h2 class="cart_title">Your Cart</h2>
+                <!-- Content-->
+                <div class="cart_content"></div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total_title">Total</div>
+                    <div class="total_price">$0</div>
+                </div>
+                <!--Buy Button-->
+                <button type="button" class="btn_buy">Pay Now</button>
+                <!--Close Cart-->
+                <i class='bx bx-x' id="close_cart"></i>
+            </div>
+        </div>
+    </header>
+    <!--Products-->
+    <section class="shop container">
+        <h2 class="section_title">Shop Products</h2>
+        <dev class="ret">
+            <div  class="shadow"></div>
+            <div class="bowl"></div>
+        </dev>
+        <!--Shop Content-->
+        <div class="shop_content">
+
+            <!--Box 1-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 1.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-1</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 2-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 2.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-2</h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 3-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina3.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-3</h2>
+                <span class="price">$100</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 4-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 4.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-4</h2>
+                <span class="price">$10</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 5-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 5.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-5</h2>
+                <span class="price">$40</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 6-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 6.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-6</h2>
+                <span class="price">$50</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 7-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 7.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-7</h2>
+                <span class="price">$5</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 8-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 8.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-8</h2>
+                <span class="price">$99</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 9-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 9.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-9</h2>
+                <span class="price">$60</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 10-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 10.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-10</h2>
+                <span class="price">$20</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Box 11-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 11.webp" alt="" class="product img">
+                <h2 class="product_title">PROTEINA-11</h2>
+                <span class="price">$44</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 12-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 12.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-12</h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 13-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 13.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-13</h2>
+                <span class="price">$75</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 14-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 14.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-14</h2>
+                <span class="price">$200</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 15-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 15.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-15</h2>
+                <span class="price">$65</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+
+            <!--Box 16-->
+            <div class="product_box">
+                <!--Stripe need images that are on online on local server  it will not show in stripe checkout-->
+                <img src="img/proteina 16.webp" alt="" class="product_img">
+                <h2 class="product_title">PROTEINA-16</h2>
+                <span class="price">$70</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+        
+        </div>
+    </section>
+    <!--Link To JS -->
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢤⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⡾⠿⢿⡀⠀⠀⠀⠀⣠⣶⣿⣷⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣦⣴⣿⡋⠀⠀⠈⢳⡄⠀⢠⣾⣿⠁⠈⣿⡆⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⠿⠛⠉⠉⠁⠀⠀⠀⠹⡄⣿⣿⣿⠀⠀⢹⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⣠⣾⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⣰⣏⢻⣿⣿⡆⠀⠸⣿⠀⠀⠀
+⠀⠀⠀⢀⣴⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⣆⠹⣿⣷⠀⢘⣿⠀⠀⠀
+⠀⠀⢀⡾⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⠋⠉⠛⠂⠹⠿⣲⣿⣿⣧⠀⠀
+⠀⢠⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣿⣿⣿⣷⣾⣿⡇⢀⠀⣼⣿⣿⣿⣧⠀
+⠰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⡘⢿⣿⣿⣿⠀
+⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣷⡈⠿⢿⣿⡆
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠁⢙⠛⣿⣿⣿⣿⡟⠀⡿⠀⠀⢀⣿⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣶⣤⣉⣛⠻⠇⢠⣿⣾⣿⡄⢻⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣦⣤⣾⣿⣿⣿⣿⣆⠁
+ ____  _____ ____    _    ____   ___         ___      _            
+/ ___|| ____| __ )  / \  / ___| / _ \  ___  / _ \  __| | __ __   __
+\___ \|  _| |  _ \ / _ \ \___ \| | | |/ _ \| | | |/ _` |/ _ \ \ / /
+ ___) | |___| |_) / ___ \ ___) | |_| | (_) | |_| | (_| |  __/\ V / 
+|____/|_____|____/_/   \_\____/ \___/ \___/ \___(_)__,_|\___| \_/ 
+
+
+-->
+</html>
